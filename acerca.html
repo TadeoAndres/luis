@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acerca de Ecolight</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="img/Logo.jpeg" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <img src="img/Logo.jpeg" alt="Ecolight logo" class="logo">
+            <!-- Botón para menú desplegable (modo móvil) -->
+            <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      <nav class="nav-links">
+        <a href="index.html">Inicio</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="acerca-nosotros">
+    <h1>¿Quiénes somos?</h1>
+    <p>En <strong>Ecolight</strong> creemos que el futuro es solar. Somos una empresa argentina comprometida con el acceso a energía limpia, portátil y accesible para todos.</p>
+    <p>Diseñamos kits solares portátiles pensados para viajes, hogares, emergencias y lugares sin acceso estable a electricidad. Nuestra misión es que puedas disfrutar de energía segura estés donde estés.</p>
+
+    <h2>¿Por qué elegirnos?</h2>
+    <ul>
+      <li>Tecnología sustentable de alta calidad</li>
+      <li>Envíos a todo el país</li>
+      <li>Atención personalizada</li>
+      <li>Garantía y soporte postventa</li>
+    </ul>
+
+    <h2>Contacto</h2>
+    <p>📧 Email: contacto@ecolight.com</p>
+    <p>📱 WhatsApp: +54 9 11 1234-5678</p>
+  </section>
+
+  <!-- Botón para volver al inicio de la página -->
+  <a href="#top" class="flecha-retorno" aria-label="Volver arriba">↑</a>
+
+    <!-- Bloque flotante de redes sociales -->
+    <div class="social-sidebar">
+        <a href="https://www.facebook.com/marcos.stopello.7/" target="_blank" aria-label="Facebook">
+          <img src="img/facebook-icon.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/tuusuario" target="_blank" aria-label="Instagram">
+          <img src="img/instagram-icon.png" alt="Instagram">
+        </a>
+        <a href="https://wa.me/549XXXXXXXXXX" target="_blank" aria-label="WhatsApp">
+          <img src="img/whatsapp-icon.png" alt="WhatsApp">
+        </a>
+      </div>
+
+  <!-- Script para controlar el menú desplegable en modo móvil -->
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+  <footer>
+    <p>&copy; 2025 Ecolight. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
+

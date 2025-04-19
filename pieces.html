@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos esenciales -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Título de la página -->
+  <title>Ecolight - Kits Solares</title>
+  
+  <!-- Ícono de la pestaña del navegador -->
+  <link rel="icon" href="img/Logo.jpeg" type="image/png">
+  
+  <!-- Fuente personalizada desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Encabezado con navegación -->
+  <header id="top">
+    <div class="nav-container">
+      <!-- Logo de la marca -->
+      <img src="img/Logo.jpeg" alt="Ecolight logo" class="logo">
+      
+      <!-- Botón para menú desplegable (modo móvil) -->
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      
+      <!-- Enlaces de navegación -->
+      <nav class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#comprar-section">Formas y medios de pago</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección con esquema técnico del kit solar -->
+  <section class="esquema">
+    <h1>Esquema técnico del kit de paneles solares portátiles</h1>
+    
+    <!-- Imagen del esquema técnico -->
+    <img src="img/sketch.jpeg" alt="Esquema del kit solar portátil" class="imagen-esquema" />
+
+    <!-- Descripción y componentes del kit -->
+    <div class="descripcion">
+      <h2>Componentes del kit:</h2>
+      <ul>
+        <li><strong>Paneles Solares:</strong> Convierten la energía solar en electricidad.</li>
+        <li><strong>Panel solar con batería integrada:</strong> Combinación de captación y almacenamiento.</li>
+        <li><strong>Kit de conexión:</strong> Cables y conectores para vincular componentes.</li>
+        <li><strong>Battery Pack:</strong> Batería que almacena la energía generada por los paneles.</li>
+        <li><strong>Zime Connector:</strong> Puerto especializado para conectar la batería con distintos dispositivos.</li>
+        <li><strong>Controlador:</strong> Gestiona la carga, salidas USB, corriente alterna y protección del sistema.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Botón para volver al inicio de la página -->
+  <a href="#top" class="flecha-retorno" aria-label="Volver arriba">↑</a>
+
+  <!-- Script para controlar el menú desplegable en modo móvil -->
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
+

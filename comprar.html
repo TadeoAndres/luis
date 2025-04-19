@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos del documento -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Ícono del sitio (favicon) -->
+  <link rel="icon" href="img/Logo.jpeg" type="image/png">
+  
+  <!-- Fuente personalizada desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Encabezado con logo y navegación -->
+  <header id="top">
+    <div class="nav-container">
+      <!-- Logo de la empresa -->
+      <img src="img/Logo.jpeg" alt="Ecolight logo" class="logo">
+
+      <!-- Botón de menú para vista móvil -->
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+
+      <!-- Navegación principal -->
+      <nav class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#comprar-section">Formas y medios de pago</a>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección de compra directa de kits -->
+  <section class="comprar-directo">
+    <h1>Compra tu kit solar en minutos</h1>
+    <p class="sub">Completá tus datos y te lo enviamos con envío gratis 🌞</p>
+
+    <div class="formulario-contenedor">
+
+      <!-- Formulario para el kit SolarGo 100 -->
+      <div class="formulario-kit" id="solargo">
+        <h2>SolarGo 100 - $89.900</h2>
+        <form>
+          <input type="text" placeholder="Tu nombre" required>
+          <input type="email" placeholder="Tu email" required>
+          <select required>
+            <option value="">Medio de pago</option>
+            <option value="tarjeta">Tarjeta de crédito</option>
+            <option value="mercadopago">Mercado Pago</option>
+            <option value="transferencia">Transferencia</option>
+          </select>
+          <button type="submit">Comprar ahora</button>
+        </form>
+      </div>
+
+      <!-- Formulario para el kit EcoKit 300 -->
+      <div class="formulario-kit" id="ecokit">
+        <h2>EcoKit 300 - $189.000</h2>
+        <form>
+          <input type="text" placeholder="Tu nombre" required>
+          <input type="email" placeholder="Tu email" required>
+          <select required>
+            <option value="">Medio de pago</option>
+            <option value="tarjeta">Tarjeta de crédito</option>
+            <option value="mercadopago">Mercado Pago</option>
+            <option value="transferencia">Transferencia</option>
+          </select>
+          <button type="submit">Comprar ahora</button>
+        </form>
+      </div>
+
+      <!-- Formulario para el kit PowerBox 600 -->
+      <div class="formulario-kit" id="powerbox">
+        <h2>PowerBox 600 - $349.900</h2>
+        <form>
+          <input type="text" placeholder="Tu nombre" required>
+          <input type="email" placeholder="Tu email" required>
+          <select required>
+            <option value="">Medio de pago</option>
+            <option value="tarjeta">Tarjeta de crédito</option>
+            <option value="mercadopago">Mercado Pago</option>
+            <option value="transferencia">Transferencia</option>
+          </select>
+          <button type="submit">Comprar ahora</button>
+        </form>
+      </div>
+
+      <!-- Formulario para el kit SunStation 1000 -->
+      <div class="formulario-kit" id="sunstation">
+        <h2>SunStation 1000 - $549.000</h2>
+        <form>
+          <input type="text" placeholder="Tu nombre" required>
+          <input type="email" placeholder="Tu email" required>
+          <select required>
+            <option value="">Medio de pago</option>
+            <option value="tarjeta">Tarjeta de crédito</option>
+            <option value="mercadopago">Mercado Pago</option>
+            <option value="transferencia">Transferencia</option>
+          </select>
+          <button type="submit">Comprar ahora</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- Bloque flotante de redes sociales -->
+    <div class="social-sidebar">
+      <a href="https://www.facebook.com/marcos.stopello.7/" target="_blank" aria-label="Facebook">
+        <img src="img/facebook-icon.png" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/tuusuario" target="_blank" aria-label="Instagram">
+        <img src="img/instagram-icon.png" alt="Instagram">
+      </a>
+      <a href="https://wa.me/549XXXXXXXXXX" target="_blank" aria-label="WhatsApp">
+        <img src="img/whatsapp-icon.png" alt="WhatsApp">
+      </a>
+    </div>
+
+  <!-- Botón flotante para volver al inicio de la página -->
+  <a href="#top" class="flecha-retorno" aria-label="Volver arriba">↑</a>
+
+  <!-- Pie de página con derechos -->
+  <footer>
+    <p>&copy; 2025 Ecolight. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+</html>
+
+
